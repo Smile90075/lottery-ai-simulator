@@ -1,0 +1,137 @@
+<h2>🏠 游戏化首页（已选定方向）</h2>
+<p class="subtitle">以下是完整游戏化风格首页 + 课程地图视图 + 互动模块预览，点击任意模块可以高亮</p>
+
+<div class="split" style="gap:20px;">
+  <!-- 首页 -->
+  <div class="mockup" style="flex:1;">
+    <div class="mockup-header">首页 · Home</div>
+    <div class="mockup-body" style="background:linear-gradient(160deg,#667eea 0%,#764ba2 60%,#a18cd1 100%);color:#fff;padding:18px;font-family:system-ui;">
+      <!-- 顶部状态栏 -->
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="width:32px;height:32px;border-radius:50%;background:#ffd700;display:flex;align-items:center;justify-content:center;font-size:16px;">👤</div>
+          <div>
+            <div style="font-size:11px;opacity:0.9;">Lv.12 · 勇者</div>
+            <div style="font-size:10px;opacity:0.7;">@player_007</div>
+          </div>
+        </div>
+        <div style="display:flex;gap:10px;font-size:12px;">
+          <div style="display:flex;align-items:center;gap:3px;">❤️ <span>5</span></div>
+          <div style="display:flex;align-items:center;gap:3px;">💎 <span>1,280</span></div>
+          <div style="display:flex;align-items:center;gap:3px;">🔥 <span>21天</span></div>
+        </div>
+      </div>
+
+      <!-- 今日任务进度 -->
+      <div style="background:rgba(255,255,255,0.15);backdrop-filter:blur(10px);border-radius:14px;padding:14px;margin-bottom:14px;border:1px solid rgba(255,255,255,0.2);">
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:8px;">
+          <span>📅 今日任务</span>
+          <span style="color:#ffd700;">65 / 100 XP</span>
+        </div>
+        <div style="background:rgba(0,0,0,0.2);border-radius:10px;height:12px;position:relative;overflow:hidden;">
+          <div style="background:linear-gradient(90deg,#ffd700,#ff9500);border-radius:10px;height:12px;width:65%;transition:width 0.5s;"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:10px;font-size:11px;">
+          <div style="display:flex;align-items:center;gap:4px;"><span>✅</span> 完成 3 节单词课</div>
+          <div style="display:flex;align-items:center;gap:4px;"><span>⏳</span> 口语跟读 (2/5)</div>
+          <div style="display:flex;align-items:center;gap:4px;"><span>🔒</span> 听力挑战</div>
+        </div>
+      </div>
+
+      <!-- 语言切换 -->
+      <div style="display:flex;gap:8px;margin-bottom:14px;">
+        <div style="background:#fff;color:#667eea;border-radius:20px;padding:6px 14px;font-size:12px;font-weight:600;">🇬🇧 英语 · Lv.3</div>
+        <div style="background:rgba(255,255,255,0.25);border-radius:20px;padding:6px 14px;font-size:12px;">🇯🇵 日语 · Lv.1</div>
+        <div style="background:rgba(255,255,255,0.25);border-radius:20px;padding:6px 14px;font-size:12px;">🇰🇷 韩语 · Lv.1</div>
+        <div style="background:rgba(255,255,255,0.1);border-radius:20px;padding:6px 14px;font-size:12px;">+ 添加</div>
+      </div>
+
+      <!-- 继续学习主卡片 -->
+      <div style="background:#fff;border-radius:16px;padding:16px;color:#333;margin-bottom:12px;box-shadow:0 8px 24px rgba(0,0,0,0.15);cursor:pointer;" data-choice="continue" onclick="toggleSelect(this)">
+        <div style="font-size:11px;color:#888;margin-bottom:4px;">继续学习 · 英语 Lv.3 Unit 4</div>
+        <div style="font-size:16px;font-weight:700;margin-bottom:10px;">🎯 日常社交场合表达</div>
+        <div style="display:flex;align-items:center;gap:8px;">
+          <div style="flex:1;background:#f0f0f0;border-radius:6px;height:6px;">
+            <div style="background:#667eea;border-radius:6px;height:6px;width:72%;"></div>
+          </div>
+          <div style="font-size:11px;color:#666;">72%</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:12px;">
+          <div style="font-size:11px;color:#888;">预计 12 分钟 · 30 XP</div>
+          <div style="background:linear-gradient(90deg,#667eea,#764ba2);color:#fff;border-radius:8px;padding:6px 14px;font-size:12px;font-weight:600;">▶ 开始</div>
+        </div>
+      </div>
+
+      <!-- 快速练习 -->
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;">
+        <div style="background:rgba(255,255,255,0.2);border-radius:10px;padding:10px;text-align:center;font-size:10px;">
+          <div style="font-size:18px;margin-bottom:3px;">📖</div>单词
+        </div>
+        <div style="background:rgba(255,255,255,0.2);border-radius:10px;padding:10px;text-align:center;font-size:10px;">
+          <div style="font-size:18px;margin-bottom:3px;">✍️</div>语法
+        </div>
+        <div style="background:rgba(255,255,255,0.2);border-radius:10px;padding:10px;text-align:center;font-size:10px;">
+          <div style="font-size:18px;margin-bottom:3px;">🎤</div>口语
+        </div>
+        <div style="background:rgba(255,255,255,0.2);border-radius:10px;padding:10px;text-align:center;font-size:10px;">
+          <div style="font-size:18px;margin-bottom:3px;">🎧</div>听力
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部导航 -->
+  <div style="display:flex;flex-direction:column;gap:12px;">
+    <div class="mockup" data-choice="map" onclick="toggleSelect(this)">
+      <div class="mockup-header">🗺️ 分级课程地图</div>
+      <div class="mockup-body" style="background:linear-gradient(180deg,#1a1a2e,#16213e);color:#fff;padding:14px;min-height:360px;">
+        <div style="text-align:center;margin-bottom:12px;font-size:13px;color:#a18cd1;">英语 Lv.3 · B1 Intermediate</div>
+        <div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:20px;">
+          <!-- 课程节点 -->
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#2d3561;border:2px solid #a18cd1;display:flex;align-items:center;justify-content:center;font-size:14px;">🏁</div>
+            <div style="background:#2d3561;border-radius:8px;padding:6px 10px;font-size:10px;">Unit 1 · 社交问候 ✅</div>
+          </div>
+          <div style="width:2px;height:14px;background:#a18cd1;opacity:0.5;"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#2d3561;border:2px solid #a18cd1;display:flex;align-items:center;justify-content:center;font-size:14px;">📞</div>
+            <div style="background:#2d3561;border-radius:8px;padding:6px 10px;font-size:10px;">Unit 2 · 电话沟通 ✅</div>
+          </div>
+          <div style="width:2px;height:14px;background:#a18cd1;opacity:0.5;"></div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,#ffd700,#ff9500);border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:18px;box-shadow:0 0 20px rgba(255,215,0,0.5);animation:pulse 2s infinite;">📍</div>
+            <div>
+              <div style="background:#ffd700;color:#333;border-radius:8px;padding:6px 10px;font-size:10px;font-weight:600;">Unit 3 · 职场面试 ⬅️ 当前</div>
+              <div style="font-size:9px;color:#888;margin-top:3px;">5/10 lessons</div>
+            </div>
+          </div>
+          <div style="width:2px;height:14px;background:rgba(255,255,255,0.1);"></div>
+          <div style="display:flex;align-items:center;gap:10px;opacity:0.4;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#2d3561;border:2px solid #555;display:flex;align-items:center;justify-content:center;font-size:14px;">🔒</div>
+            <div style="background:#2d3561;border-radius:8px;padding:6px 10px;font-size:10px;">Unit 4 · 讨论观点</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;opacity:0.4;">
+            <div style="width:36px;height:36px;border-radius:50%;background:#2d3561;border:2px solid #555;display:flex;align-items:center;justify-content:center;font-size:14px;">🔒</div>
+            <div style="background:#2d3561;border-radius:8px;padding:6px 10px;font-size:10px;">Unit 5 · 单元考试 🏆</div>
+          </div>
+        </div>
+        <style>@keyframes pulse{0%,100%{transform:scale(1);}50%{transform:scale(1.05);}}</style>
+      </div>
+    </div>
+
+    <div class="mockup" style="background:#fff;">
+      <div class="mockup-header">🎮 底部导航</div>
+      <div style="display:flex;justify-content:space-around;padding:10px 0;background:#fff;border-top:1px solid #eee;">
+        <div style="text-align:center;font-size:9px;color:#667eea;">🏠<div style="font-weight:600;">首页</div></div>
+        <div style="text-align:center;font-size:9px;color:#aaa;">🗺️<div>课程</div></div>
+        <div style="text-align:center;font-size:9px;color:#aaa;">⚔️<div>对战</div></div>
+        <div style="text-align:center;font-size:9px;color:#aaa;">🏆<div>排名</div></div>
+        <div style="text-align:center;font-size:9px;color:#aaa;">👤<div>我的</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:20px;">
+  <p class="label">📌 点击任意模块可以标记你的关注点，然后在终端告诉我：整体方向 OK 吗？</p>
+</div>
