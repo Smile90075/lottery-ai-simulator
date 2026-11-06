@@ -1,0 +1,122 @@
+<h2>首页布局方向选择</h2>
+<p class="subtitle">以下三种布局分别代表不同的设计哲学，请点击选择你喜欢的风格，或在终端告诉我你的想法</p>
+
+<div class="cards">
+  <div class="card" data-choice="gamified" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">🎮 游戏化风格</div>
+        <div class="mockup-body" style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:16px;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:16px;">
+            <div style="font-weight:bold;">LingoQuest</div>
+            <div style="font-size:12px;">🔥 连续 7 天</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.2);border-radius:12px;padding:12px;margin-bottom:12px;">
+            <div style="font-size:11px;opacity:0.8;">今日目标进度</div>
+            <div style="background:rgba(0,0,0,0.2);border-radius:8px;height:10px;margin-top:6px;">
+              <div style="background:#ffd700;border-radius:8px;height:10px;width:65%;"></div>
+            </div>
+            <div style="font-size:11px;margin-top:4px;">65 / 100 XP</div>
+          </div>
+          <div style="background:rgba(255,255,255,0.95);border-radius:10px;color:#333;padding:10px;margin-bottom:8px;">
+            <div style="font-size:12px;">🇬🇧 英语 · A2 初级</div>
+            <div style="font-weight:bold;font-size:14px;margin-top:4px;">Lesson 3: 日常对话</div>
+            <div style="font-size:11px;color:#666;">▶ 点击开始 · 15 分钟</div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;font-size:11px;">
+            <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:6px;text-align:center;">🥇 排名 #42</div>
+            <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:6px;text-align:center;">⭐ 成就 12</div>
+            <div style="background:rgba(255,255,255,0.2);border-radius:8px;padding:6px;text-align:center;">💎 宝石 880</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>🎮 游戏化驱动</h3>
+      <p>类似 Duolingo，积分、成就、排行榜为核心，适合希望通过游戏化机制保持学习动力的用户</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="focused" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">📚 专注学习风格</div>
+        <div class="mockup-body" style="background:#fafbfc;padding:16px;color:#333;">
+          <div style="font-size:11px;color:#888;margin-bottom:4px;">你好，小明 👋</div>
+          <div style="font-size:18px;font-weight:600;margin-bottom:16px;">今天想学点什么？</div>
+          
+          <div style="margin-bottom:14px;">
+            <div style="font-size:12px;font-weight:600;margin-bottom:8px;">我的课程</div>
+            <div style="background:#fff;border-radius:10px;border:1px solid #eaecef;padding:12px;margin-bottom:8px;display:flex;gap:10px;align-items:center;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#ffeaa7;display:flex;align-items:center;justify-content:center;font-size:18px;">🇯🇵</div>
+              <div style="flex:1;">
+                <div style="font-size:13px;font-weight:500;">日语 N5 基础</div>
+                <div style="font-size:11px;color:#888;">进度 42% · 第 6 单元</div>
+              </div>
+              <div style="background:#4a90d9;color:#fff;font-size:11px;padding:4px 8px;border-radius:6px;">继续</div>
+            </div>
+            <div style="background:#fff;border-radius:10px;border:1px solid #eaecef;padding:12px;display:flex;gap:10px;align-items:center;">
+              <div style="width:36px;height:36px;border-radius:8px;background:#dfe6e9;display:flex;align-items:center;justify-content:center;font-size:18px;">🇰🇷</div>
+              <div style="flex:1;">
+                <div style="font-size:13px;font-weight:500;">韩语入门</div>
+                <div style="font-size:11px;color:#888;">进度 18% · 第 2 单元</div>
+              </div>
+              <div style="background:#4a90d9;color:#fff;font-size:11px;padding:4px 8px;border-radius:6px;">继续</div>
+            </div>
+          </div>
+
+          <div>
+            <div style="font-size:12px;font-weight:600;margin-bottom:8px;">推荐练习</div>
+            <div style="background:#fff;border-radius:10px;border:1px solid #eaecef;padding:10px;font-size:12px;color:#555;">
+              ✍️ 语法练习 · 日文助词辨析（预计 10 分钟）
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>📚 专注学习导向</h3>
+      <p>简洁专业，以课程进度和学习效果为核心，减少干扰，适合有明确学习目标的严肃学习者</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="social" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div class="mockup">
+        <div class="mockup-header">🌟 社区驱动风格</div>
+        <div class="mockup-body" style="background:#fff5f0;padding:16px;color:#333;">
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;">
+            <div style="width:40px;height:40px;border-radius:50%;background:#fd79a8;"></div>
+            <div>
+              <div style="font-size:13px;font-weight:600;">@mimi_learns</div>
+              <div style="font-size:10px;color:#888;">🇰🇷 TOPIK 2级 · 今日 1.2k 词</div>
+            </div>
+            <div style="margin-left:auto;background:#fd79a8;color:#fff;font-size:10px;padding:4px 10px;border-radius:12px;">关注</div>
+          </div>
+
+          <div style="background:#fff;border-radius:12px;padding:12px;margin-bottom:10px;">
+            <div style="font-size:11px;color:#888;">✨ 学习打卡</div>
+            <div style="font-size:13px;margin-top:6px;">今天练了 30 分钟口语！终于能顺畅说"사과하고 싶어요"了 🎉</div>
+            <div style="display:flex;gap:12px;margin-top:8px;font-size:11px;color:#888;">
+              <span>❤️ 23</span><span>💬 5</span><span>🔖 收藏</span>
+            </div>
+          </div>
+
+          <div style="background:#fff;border-radius:12px;padding:10px;font-size:12px;">
+            <div style="font-weight:600;margin-bottom:6px;">🔥 热门话题</div>
+            <div style="color:#666;padding:3px 0;">#英语发音挑战 · 1.2万讨论</div>
+            <div style="color:#666;padding:3px 0;">#日剧学日语 · 8.3千讨论</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>🌟 社区+内容导向</h3>
+      <p>类似小红书/Instagram，社区内容和同龄人学习打卡为主，适合喜欢社交学习、互相激励的用户</p>
+    </div>
+  </div>
+</div>
+
+<div class="section" style="margin-top:24px;">
+  <p class="label">💡 你也可以说"混合风格，A+B 的组合"——灵活选择最重要</p>
+</div>
